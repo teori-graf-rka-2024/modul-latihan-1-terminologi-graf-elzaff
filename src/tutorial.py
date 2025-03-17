@@ -1,7 +1,7 @@
 import networkx as nx
 from graph import create_graph, get_degree, dfs_traversal, bfs_traversal, find_shortest_path, visualize_graph
 
-# Data edges untuk graf
+# .Data edges untuk graf
 edges = [(1, 2), (1, 3), (2, 4), (2, 5), (3, 6), (3, 7), (4, 8), (5, 8)]
 
 # Membuat graf
