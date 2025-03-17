@@ -29,4 +29,8 @@ jobs:
         python -m pip install numpy
     - name: Test with Python unit Test
       run: |
+<<<<<<< HEAD
         pytest tests/test.py -v
+=======
+        pytest tests/test.py -v
+>>>>>>> 41a4a257cdb1b0236b07b3e1b194a906f9f37336
