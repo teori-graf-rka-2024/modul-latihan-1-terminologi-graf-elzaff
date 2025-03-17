@@ -9,10 +9,14 @@ def create_graph(edges: list[tuple[int, int]]) -> nx.Graph:
 
 #2. get_degree
 def get_degree(G: nx.Graph, node: int) -> int:
+    if node not in G:
+        raise ValueError(f"Node {node} tidak ditemukan dalam graf.")
     return G.degree[node]
 
 #3. dfs_traversal
 def dfs_traversal(G: nx.Graph, start: int) -> list[int]:
+    if start not in G:
+        raise ValueError(f"Node {start} tidak ditemukan dalam graf.")
     return list(nx.dfs_preorder_nodes(G, start))
 
 #4. bfs_traversal
